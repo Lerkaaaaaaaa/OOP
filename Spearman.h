@@ -1,0 +1,9 @@
+#pragma once
+#include "Infantry.h"
+
+class Spearman : public Infantry {
+public:
+    Spearman(int x, int y);
+    std::unique_ptr<Unit> clone() const override;
+    std::string getType() const override;
+};
